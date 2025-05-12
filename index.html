@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <style>
+        h1{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:center;
+        }
+
+        body{
+            width:100%;
+            height:100vh;
+            overflow: hidden;
+            background-color:black;
+
+        }
+
+        .image{
+            display:flex;
+            justify-content: center;
+        }
+
+
+        @media only screen and (max-width:1010px){
+            .image{
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1> Wecome to TechAid</h1>
+    
+    <div class="image">
+    <img src="background1.png" width="320px">
+</div>
+<df-messenger
+  intent="WELCOME"
+  chat-title="TechAIDBot"
+  agent-id="902e70fa-fcb8-456a-869f-aeedee13914d"
+  language-code="en"
+></df-messenger>
+    
+</body>
+</html>
