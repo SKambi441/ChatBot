@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <style>
-        h1{
-            color:white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align:center;
-        }
-
-           body, html {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TachAID_Chatbot</title>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <style>
+    body, html {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -35,7 +29,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
     z-index: -1; /* Ensures it stays behind the content */
-}
+  }
     .video-background {
       position: absolute;
       top: 0;
@@ -46,6 +40,13 @@
       z-index: -1;
       opacity: 0.10; /* Adjust the opacity value */
     }
+
+    h1{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:center;
+      }
+
     .content {
       position: relative;
       z-index: 1;
@@ -54,26 +55,24 @@
       font-family: Arial, sans-serif;
       padding: 20px;
     }
-
-    </style>
-</head>
-
-
-<body>
     
+  </style>
+</head>
+<body>
   <video class="video-background" autoplay loop muted>
     <source src="About_chatbot.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <div class="content">
-    <h1>Welcome TachAID Chatbot</h1>
+     <h1>Welcome TachAID Chatbot</h1>
     <p>FAQ About AI basic concepts.</p>
-<df-messenger
+  </div>
+
+  <df-messenger
   intent="WELCOME"
   chat-title="TechAIDBot_2"
   agent-id="696d67b9-eaa7-449c-87b5-6f7d64560a1b"
   language-code="en"
 ></df-messenger>
-    
 </body>
 </html>
