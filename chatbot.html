@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAid Bot - AI Learning Assistant</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+    
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+    <source src="About_chatbot.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  </div>
+    <div class="container">
+        <div class="header">
+            <h1>TechAid Bot</h1>
+            <p>Your AI Learning Assistant - Specializing in Artificial Intelligence Questions</p>
+        </div>
+
+        <div class="conversation-flows">
+            <div class="flows-title"> Quick Learning Paths:</div>
+            <div class="flow-buttons">
+                <button class="flow-btn" onclick="startFlow('basics')">AI Basics</button>
+                <button class="flow-btn" onclick="startFlow('nlp')">Learn about NLP</button>
+                <button class="flow-btn" onclick="startFlow('ethics')">Explore AI Ethics</button>
+                <button class="flow-btn" onclick="startFlow('applications')">Real-world Applications</button>
+                <button class="flow-btn" onclick="startFlow('terminology')">Core Terminology</button>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message bot-message">
+                    <div class="bot-avatar">TA</div>
+                    <div class="message-content">
+                        Welcome to TechAid Bot! 👋 I'm your specialized AI learning assistant. I can help you understand:
+                        <br><br>
+                         Core AI concepts and terminology<br>
+                         Machine Learning and Deep Learning<br>
+                        💬 Natural Language Processing<br>
+                         Computer Vision<br>
+                         AI Ethics and considerations<br>
+                         Real-world applications<br><br>
+                        <strong>Note:</strong> I only answer AI-related questions. For non-AI topics, I'll redirect you to appropriate resources.
+                        <br><br>
+                        What would you like to learn about today?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    class="input-field" 
+                    id="userInput" 
+                    placeholder="Ask me anything about AI..."
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button class="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
